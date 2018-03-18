@@ -1,5 +1,5 @@
 /**
- * 
+ *
  * @authors ZiQiangWang
  * @email   814120507@qq.com
  * @date    2017-08-04 16:08:43
@@ -18,7 +18,7 @@ class BackToTop extends Component {
       style: {
         ...props.position,
         position: 'fixed',
-        zIndex: 1000,
+        zIndex: props.zIndex === '' ? 1000 : parseInt(props.zIndex),
         paddingBottom: '50%',
         padding: '6px 12px',
         fontSize: props.fontSize,
